@@ -1,0 +1,563 @@
+:root {
+    --morado: #8e7bef;
+    --black: #222222;
+    --yellow: #FCDA68;
+    --marron: #423f40;
+    --gray: #f5f9f2;
+    --white: #ffffff;
+
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 350px;
+    /* margin-top: 60px; */
+}
+
+ul {
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: var(--gray);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    justify-content: space-evenly;
+}
+
+.menu {
+    background-color: aqua;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 25px;
+    cursor: pointer;
+
+    transform: translateX(-150%);
+    transition: transform 0.5s;
+}
+
+.menu-show {
+    transform: translateX(0);
+}
+
+.bx-menu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.home {
+    /* background-color: red; */
+    height: 100vh;
+}
+
+.header {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 60px;
+}
+
+.tilte {
+    font-size: 35px;
+}
+
+.subtitle2 {
+    opacity: 0.6;
+}
+
+span{
+    color: var(--morado);
+}
+
+.iconsNetworks{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.IconInstagram img {
+    background-color: var(--morado);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.iconlinkedin {
+    width: 40px;
+    height: 40px;
+    background-color: var(--morado);
+    border-radius: 50%;
+}
+
+.iconTwitter {
+    width: 40px;
+    height: 40px;
+    background-color: var(--morado);
+    border-radius: 50%;
+}
+
+.imageMajor img {
+    width: 250px;
+    height: 330px;
+}
+
+.imageMajor {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: -20px;
+}
+
+.contactMe {
+    background-color: var(--morado);
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    position: relative;
+    top: 380px;
+}
+
+.contactMe p {
+    color: var(--white);
+}
+
+.ExperienceSkills {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.title2 {
+    font-size: 23px;
+}
+
+.subtitle2 {
+    padding: 1rem 0;
+    font-size: bold;
+}
+
+h3 {
+    padding-bottom: 1rem;
+    font-size: 22px;
+}
+
+.firstTitle {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.YearfirstTitle {
+    opacity: 60%;
+    font-size: 13px;
+}
+
+.firstTitleObtained {
+    font-weight: bold;
+}
+
+.firstWorked {
+    font-size: 13px;
+    position: relative;
+    left: 87px;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    opacity: 60%;
+}
+
+.SecondTitle {
+    padding-top: 1rem;
+}
+
+.secondTitle {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.YearSecondTitle {
+    opacity: 60%;
+    font-size: 13px;
+}
+
+.secondTitleObtained {
+    font-weight: bold;
+}
+
+.secondWorked {
+    font-size: 13px;
+    position: relative;
+    left: 87px;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    opacity: 60%;
+}
+
+.ThirtyTitle {
+    padding-top: 1rem;
+}
+
+.thirtyTitle {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.YearThirtyTitle {
+    opacity: 60%;
+    font-size: 13px;
+}
+
+.thirtyTitleObtained {
+    font-weight: bold;
+}
+
+.thirtyWorked {
+    font-size: 13px;
+    position: relative;
+    left: 87px;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    opacity: 60%;
+}
+
+.titleSkills {
+    padding-top: 2rem;
+}
+
+.credencials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.title3 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    font-size: 23px;
+}
+
+.entertainment img {
+    padding-right: 1rem;
+}
+
+.entertainment p {
+    /* background-color: aqua; */
+    color: var(--morado);
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.imgEjemplo3 {
+    padding: 1rem;
+}
+
+.titleContact {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 23px;
+    padding-bottom: 2rem;
+}
+
+.emailPhone {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.iconPhone {
+    background-color: var(--gray);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-bottom: 0.5rem;
+}
+
+.nameNumberPhone {
+    font-weight: bold;
+}
+
+.numberPhone {
+    opacity: 50%;
+}
+
+.iconEmail {
+    background-color: var(--gray);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-bottom: 0.5rem;
+}
+
+.nameEmail {
+    font-weight: bold;
+}
+
+.myEmail {
+    opacity: 50%;
+}
+
+.final {
+    color: var(--morado);
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5rem;
+    letter-spacing: 5px;
+    
+}
+/* ----------------------------------------------------------------------- */
+
+@media (min-width: 980px) {
+
+    .container {
+        min-width: 1000px;
+    }
+
+    .navbar {
+        background-color: var(--gray);
+        height: 60px;
+        position: fixed;
+        justify-content: space-evenly;
+        box-shadow: 1px 1px 1px red;
+    }
+
+    .bx-menu {
+        visibility: hidden;
+    }
+
+    .menu {
+        background-color: var(--gray);
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        cursor: pointer;
+
+        transform: translateY(0);
+    }
+
+    li {
+        list-style: none;
+    }
+    
+    .home {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageMajor {
+        width: 50%;
+        height: auto;
+    }
+
+    .imageMajor img {
+        width: 415px;
+        height: 100vh;
+    }
+    
+    .header {
+        height: 100vh;
+        gap: 3rem;
+        padding: 0 1rem;
+        margin-top: 60px;
+    }
+
+    .tilte {
+        width: 100%;
+        font-size: 80px;
+        text-align: left;
+    }
+
+    .subtitle {
+        width: 100%;
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .subtitle2 {
+        width: 100%;
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .iconsNetworks{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contactMe {
+        /* background-color: aqua; */
+        width: 350px;
+        top: -20px;
+        right: 100px;
+        
+    }
+
+    .ExperienceSkills {
+        height: 100vh;
+    }
+    
+    .part1 {
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    .titleYsubtitle {
+        width: 600px;
+    }
+
+    .descriptionExperienceYmyTitles {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title2 {
+        font-size: 45px;
+    }
+
+    .descriptionExperience h3 {
+        font-size: 30px;
+    }
+
+    .credencials {
+        flex-direction: row;
+        height: 150px;
+    }
+
+    .titleSkills h3 {
+        font-size: 30px;
+    }
+
+    .Briefcase {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 100vh;
+    }
+
+    .title3 {
+        /* background-color: aqua; */
+        font-size: 45px;
+    }
+
+    .entertainment {
+        /* background-color: aqua; */
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .beauty img {
+        width: 340px;
+        height: 350px;
+    }
+
+    .training img {
+        width: 340px;
+        height: 350px;
+    }
+
+    .hotels img {
+        width: 340px;
+        height: 350px;
+    }
+
+    .titleContact {
+        width: 100%;
+        text-align: start;
+        font-size: 45px;
+        padding-left: 1rem;
+    }
+
+    .emailPhone {
+        /* background-color: aqua; */
+        justify-content: center;
+        gap: 10rem;
+        padding-top: 3rem;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .phone img {
+        border-radius: 20px;
+    }
+
+    .email img {
+        border-radius: 20px;
+    }
+
+    .final {
+        font-size: 20px;
+        padding-top: 5rem 0;
+    }
+}
+
+
+
+
+
