@@ -4,6 +4,7 @@
     --yellow: #FCDA68;
     --marron: #423f40;
     --gray: #f5f9f2;
+    --lightslategray: lightslategray;
     --white: #ffffff;
 
     font-size: 16px;
@@ -19,6 +20,10 @@
     user-select: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -27,7 +32,6 @@ body {
 
 .container {
     max-width: 350px;
-    /* margin-top: 60px; */
 }
 
 ul {
@@ -46,22 +50,25 @@ a {
 
 .navbar {
     background-color: var(--gray);
+    width: 100%;
+    position: fixed;
+    right: 0;
+    width: 100%;
     height: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+    z-index: 2;
 }
 
 .menu {
     background-color: aqua;
     position: fixed;
     top: 50px;
-    width: 100%;
+    width: 50%;
     height: 100vh;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,12 +91,10 @@ a {
 }
 
 .home {
-    /* background-color: red; */
     height: 100vh;
 }
 
 .header {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,12 +104,21 @@ a {
     margin-top: 60px;
 }
 
+.headerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .tilte {
     font-size: 35px;
 }
 
 .subtitle2 {
-    opacity: 0.6;
+    color: var(--lightslategray);
 }
 
 span{
@@ -142,28 +156,36 @@ span{
     height: 330px;
 }
 
-.imageMajor {
+.contactMe {
+    /* background-color: var(--morado); */
+    display: flex;
+    flex-direction:column-reverse;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    top: -20px;
+    gap: 0.5rem;
 }
 
-.contactMe {
-    background-color: var(--morado);
-    width: 250px;
-    height: 45px;
+.icon_contactMe {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1.5rem;
-    position: relative;
-    top: 380px;
+    gap: 1rem;
+    cursor: pointer;
+
 }
 
-.contactMe p {
+.icon_contactMe p {
     color: var(--white);
+}
+
+.phraseContactMe {
+    background-color: var(--morado);
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .ExperienceSkills {
@@ -192,8 +214,8 @@ h3 {
 }
 
 .YearfirstTitle {
-    opacity: 60%;
-    font-size: 13px;
+    color: var(--lightslategray);
+    font-size: 15px;
 }
 
 .firstTitleObtained {
@@ -201,12 +223,10 @@ h3 {
 }
 
 .firstWorked {
-    font-size: 13px;
-    position: relative;
-    left: 87px;
-    padding-top: 0.2rem;
-    padding-bottom: 1rem;
-    opacity: 60%;
+    color: var(--lightslategray);
+    font-size: 15px;
+    padding: 0.2rem 0;
+    padding-left: 6rem;
 }
 
 .SecondTitle {
@@ -219,8 +239,8 @@ h3 {
 }
 
 .YearSecondTitle {
-    opacity: 60%;
-    font-size: 13px;
+    color: var(--lightslategray);
+    font-size: 15px;
 }
 
 .secondTitleObtained {
@@ -228,12 +248,10 @@ h3 {
 }
 
 .secondWorked {
-    font-size: 13px;
-    position: relative;
-    left: 87px;
-    padding-top: 0.2rem;
-    padding-bottom: 1rem;
-    opacity: 60%;
+    color: var(--lightslategray);
+    font-size: 15px;
+    padding: 0.2rem 0;
+    padding-left: 6rem;
 }
 
 .ThirtyTitle {
@@ -246,8 +264,8 @@ h3 {
 }
 
 .YearThirtyTitle {
-    opacity: 60%;
-    font-size: 13px;
+    color: var(--lightslategray);
+    font-size: 15px;
 }
 
 .thirtyTitleObtained {
@@ -255,12 +273,10 @@ h3 {
 }
 
 .thirtyWorked {
-    font-size: 13px;
-    position: relative;
-    left: 87px;
-    padding-top: 0.2rem;
-    padding-bottom: 1rem;
-    opacity: 60%;
+    color: var(--lightslategray);
+    font-size: 15px;
+    padding: 0.2rem 0;
+    padding-left: 6rem;
 }
 
 .titleSkills {
@@ -288,7 +304,6 @@ h3 {
 }
 
 .entertainment p {
-    /* background-color: aqua; */
     color: var(--morado);
     padding-left: 1rem;
     font-weight: bold;
@@ -306,7 +321,6 @@ h3 {
 }
 
 .emailPhone {
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +342,7 @@ h3 {
 }
 
 .numberPhone {
-    opacity: 50%;
+    color: var(--lightslategray);
 }
 
 .iconEmail {
@@ -344,7 +358,7 @@ h3 {
 }
 
 .myEmail {
-    opacity: 50%;
+    color: var(--lightslategray);
 }
 
 .final {
@@ -364,11 +378,12 @@ h3 {
     }
 
     .navbar {
-        background-color: var(--gray);
-        height: 60px;
-        position: fixed;
-        justify-content: space-evenly;
-        box-shadow: 1px 1px 1px red;
+        /* background-color: aqua; */
+        width: 100%;
+        justify-content: center;
+        gap: 5rem;
+        box-shadow: 1px 1px 1px rgb(241, 60, 60);
+        z-index: 2;
     }
 
     .bx-menu {
@@ -378,41 +393,31 @@ h3 {
     .menu {
         background-color: var(--gray);
         position: static;
-        width: auto;
-        height: auto;
+        width: 60%;
+        height: 100%;
         flex-direction: row;
         cursor: pointer;
 
         transform: translateY(0);
     }
-
-    li {
-        list-style: none;
-    }
     
-    .home {
-        width: 100%;
-        height: 100vh;
+    .headerDescription {
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageMajor {
-        width: 50%;
-        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
     }
 
     .imageMajor img {
-        width: 415px;
-        height: 100vh;
+        width: 100%;
+        height: 85vh;
+        justify-content: center;
     }
     
     .header {
+        flex-direction: row;
         height: 100vh;
-        gap: 3rem;
-        padding: 0 1rem;
-        margin-top: 60px;
+        align-items: start;
     }
 
     .tilte {
@@ -433,17 +438,11 @@ h3 {
         text-align: start;
     }
 
-    .iconsNetworks{
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .contactMe {
-        /* background-color: aqua; */
-        width: 350px;
-        top: -20px;
-        right: 100px;
-        
+    .icon_contactMe {
+        /* background-color: red; */
+        position: relative;
+        right: 690px;
+        bottom: 63px;
     }
 
     .ExperienceSkills {
@@ -556,8 +555,4 @@ h3 {
         padding-top: 5rem 0;
     }
 }
-
-
-
-
 
